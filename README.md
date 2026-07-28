@@ -6,7 +6,7 @@ Flowstate's own setup.
 
 ## How to use
 
-1. Copy this folder → rename it after the client's business (e.g. `bryce-electrical`).
+1. Copy this folder → rename it after the client's business (e.g. `acme-electrical`).
 2. That folder becomes the client's private GitHub repo on Ivan's GitHub; the client is added as collaborator.
 3. Fill files **just-in-time** — only what the current module needs. Empty files are a to-do list, not a gap.
 4. For each team member, copy `Brain 2/wiki/people/_TEMPLATE/` → `Brain 2/wiki/people/their-name/`.
