@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# sync + hook logs (generated on the client machine)
+.claude/sync.log
+*.log
+
+# local-only / secrets (credentials NEVER belong in the brain — status only in access-tracker)
+.env
+local/
