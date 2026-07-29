@@ -1,6 +1,6 @@
 # Triage — [Person Name]
 
-*How the AI sorts this person's inbox. Tier: v0.*
+*How the AI sorts this person's inbox. Fill: v0.*
 
 ## 🔴 Red — drop everything, escalate now
 

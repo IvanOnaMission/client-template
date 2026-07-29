@@ -1,7 +1,7 @@
 # [Business Name] — at a glance
 
 The one-screen identity every agent should know without looking anything up.
-Keep it to a few lines — depth lives in `../Brain 2/wiki/shared/business.md`.
+Keep it to a few lines — depth lives in `../Brain 2/wiki/business.md`.
 
 - **What they do:** [one line]
 - **Owner / key people:** [name(s) + role(s)]

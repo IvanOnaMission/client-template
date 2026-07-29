@@ -10,7 +10,7 @@ Drop here:
 - Screenshots, exports, web clippings
 
 **Agents do NOT read this folder directly.** Material here gets *ingested* —
-synthesised into the structured, tier-aware `Brain 2/wiki/` (the wiki layer) — and then
+synthesised into the structured `Brain 2/wiki/` (the wiki layer) — and then
 left in place.
 
 Rules:

@@ -25,16 +25,16 @@ Flowstate's own setup.
 │   └── MEMORY.md         index
 │
 ├── Brain 2/             <- KNOWLEDGE wiki — loaded ON DEMAND
-│   ├── CLAUDE.md         wiki schema (ingest/query/lint + tier rules)
+│   ├── CLAUDE.md         wiki schema (ingest/query/lint)
 │   ├── index.md          catalog — read first to find a page
 │   ├── log.md            ingest/query/lint history
 │   ├── raw/             immutable sources (emails, transcripts, exports) — agents don't read directly
-│   └── wiki/            synthesised pages, ACCESS-TIER split:
-│       ├── ACCESS-MODEL.md
-│       ├── public/       customer-safe
-│       ├── shared/       default internal
-│       ├── admin/        admin + owner
-│       ├── owner/        owner only
+│   └── wiki/            synthesised pages (one topic per file):
+│       ├── business.md · services.md · faq.md · boundaries.md
+│       ├── commercials.md · customers.md · customer-journey.md
+│       ├── decision-rules.md · operations.md · existing-ai.md
+│       ├── stories.md · suppliers-partners.md
+│       ├── access-tracker.md · metrics.md
 │       └── people/       one folder per team member
 │
 └── agents/             <- the automations (one folder each)
@@ -42,25 +42,13 @@ Flowstate's own setup.
 
 ## The two brains
 - **Brain 1** = daily, always loaded, small. Who they are + current state + safety rules.
-- **Brain 2** = knowledge, on demand, can be large. Raw sources → tier-split wiki.
+- **Brain 2** = knowledge, on demand, can be large. Raw sources → synthesised wiki.
 - Don't read Brain 2 unless a task needs it — Brain 1 covers the everyday.
 
-## Access tiers (Brain 2) — read `Brain 2/wiki/ACCESS-MODEL.md` before filling
-| Tier | Who sees it | Examples |
-|---|---|---|
-| `public/` | Anyone — customers, website | Services, hours, booking, public FAQ |
-| `shared/` | Any internal user (default) | How the business runs, customer journey, ops |
-| `admin/` | Admin + owner | Invoicing rules, customer financials, access tracker |
-| `owner/` | Owner only | Margins, financials, HR, strategy |
-
-Default new content to `shared/`. Promote up a tier as sensitivity demands.
-**Customer-facing agents read ONLY `public/`.**
-
 ## Fill order (Brain 2/wiki)
-- **v0 — before any build:** `shared/business.md`, `services.md`, `faq.md`, `boundaries.md`, `commercials.md`, `admin/access-tracker.md`, each person's voice + triage in `people/`. Plus fill `Brain 1/` (business, boundaries).
-- **v1 — within 30 days:** `shared/customers.md`, `customer-journey.md`, `decision-rules.md`, `operations.md`
-- **v2 — as agents reveal gaps:** `shared/suppliers-partners.md`, `owner/metrics.md`, `shared/existing-ai.md`, `stories.md`
-- **Customer-facing module built:** populate `public/`
+- **v0 — before any build:** `business.md`, `services.md`, `faq.md`, `boundaries.md`, `commercials.md`, `access-tracker.md`, each person's voice + triage in `people/`. Plus fill `Brain 1/` (business, boundaries).
+- **v1 — within 30 days:** `customers.md`, `customer-journey.md`, `decision-rules.md`, `operations.md`
+- **v2 — as agents reveal gaps:** `suppliers-partners.md`, `metrics.md`, `existing-ai.md`, `stories.md`
 
 ## Rules
 - Plain markdown, one topic per file. Never commit credentials (`access-tracker.md` = status only).

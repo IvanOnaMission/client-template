@@ -1,6 +1,6 @@
 # Decision Rules
 
-*"What would the owner do?" — judgement calls the AI should mirror. Tier: v1.*
+*"What would the owner do?" — judgement calls the AI should mirror. Fill: v1.*
 
 ## Customer pushes back on price
 

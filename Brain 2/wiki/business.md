@@ -1,6 +1,6 @@
 # Business
 
-*What the business is. Tier: v0.*
+*What the business is. Fill: v0.*
 
 ## What we do
 

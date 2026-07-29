@@ -1,6 +1,6 @@
 # Suppliers & Partners
 
-*Trade network. Tier: v2.*
+*Trade network. Fill: v2.*
 
 ## Main suppliers — account numbers, what for
 

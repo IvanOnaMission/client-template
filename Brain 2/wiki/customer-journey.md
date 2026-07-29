@@ -1,6 +1,6 @@
 # Customer Journey
 
-*How a job flows, start to finish. Tier: v1.*
+*How a job flows, start to finish. Fill: v1.*
 
 ## Typical residential job — quote to invoice
 

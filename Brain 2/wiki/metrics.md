@@ -1,6 +1,6 @@
 # Metrics
 
-*What numbers the owner wants to see. Tier: v2.*
+*What numbers the owner wants to see. Fill: v2.*
 
 ## Weekly numbers
 

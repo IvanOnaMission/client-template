@@ -1,6 +1,6 @@
 # Commercials
 
-*Pricing, rates, fees, terms. Tier: v0.*
+*Pricing, rates, fees, terms. Fill: v0.*
 
 ## Hourly rate(s)
 

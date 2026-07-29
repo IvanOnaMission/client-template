@@ -1,6 +1,6 @@
 # Voice — [Person Name]
 
-*How this person writes and talks. The AI mimics this. Tier: v0.*
+*How this person writes and talks. The AI mimics this. Fill: v0.*
 
 Rule: if it sounds like a chatbot, it's wrong. If it sounds like them on a Monday morning, it's right.
 

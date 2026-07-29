@@ -1,6 +1,6 @@
 # Operations
 
-*How the business runs day to day. Tier: v1.*
+*How the business runs day to day. Fill: v1.*
 
 ## Service area — suburbs / regions covered
 

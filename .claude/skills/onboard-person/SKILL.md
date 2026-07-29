@@ -54,12 +54,11 @@ Ask **one question at a time.** Write each answer into the right file **as you g
 
 1. **Start their `log.md`** with: `## [today's date] folder created — onboarded via interview`
 2. **Update `memory.md`** footer: `_Last updated by the AI: [today's date]_`
-3. **Confirm their access tier** with whoever's setting them up (not the new person): which shared tiers can they read — staff (`shared/`), admin (`+admin/`), or owner (all)? Note it, don't guess. See `Brain 2/wiki/ACCESS-MODEL.md`.
-4. **Never write credentials** into any file. Passwords/tokens go in the proper secrets store, never the brain.
-5. **Close warm:** *"Done — I know how you work now. Just talk to me normally and I'll keep learning as we go."*
+3. **Never write credentials** into any file. Passwords/tokens go in the proper secrets store, never the brain.
+4. **Close warm:** *"Done — I know how you work now. Just talk to me normally and I'll keep learning as we go."*
 
 ## Rules
 
 - **Edit, don't append.** If re-run, rewrite stale answers in `memory.md` — don't stack contradictions. (Full pattern: `Brain 2/wiki/people/README.md`.)
-- **One person per run.** Each person's folder is private (admin-tier) — never read another person's folder into this session.
+- **One person per run.** Each person's folder is private — never read another person's folder into this session.
 - **Write only to this person's folder.** Nothing else.

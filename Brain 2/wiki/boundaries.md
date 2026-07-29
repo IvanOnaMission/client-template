@@ -1,6 +1,6 @@
 # Boundaries — the "do not do" list
 
-*What the AI must never do without a human. Tier: v0. Every agent reads this first.*
+*What the AI must never do without a human. Fill: v0. Every agent reads this first.*
 
 ## Hard rules — AI never does these
 

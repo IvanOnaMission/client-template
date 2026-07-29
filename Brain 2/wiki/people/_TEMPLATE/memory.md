@@ -1,6 +1,6 @@
 # Memory — [Person Name]
 
-*The AI's running memory of this person. **Current state only** — the AI keeps this tidy. Tier: admin (per-person — staff never read each other's). v0.*
+*The AI's running memory of this person. **Current state only** — the AI keeps this tidy. Per-person — staff never read each other's. Fill: v0.*
 
 > **Rule: this file is EDITED, not appended.** When something changes, the AI **rewrites the line** — it does not stack a contradicting one. Stale facts get replaced here. The full timestamped history lives in `log.md`. Git keeps every past version, so nothing is ever truly lost.
 

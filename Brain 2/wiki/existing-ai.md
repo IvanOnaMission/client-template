@@ -1,6 +1,6 @@
 # Existing AI
 
-*AI tools and automations the business already uses. Tier: v2.*
+*AI tools and automations the business already uses. Fill: v2.*
 
 ## Current ChatGPT / custom GPTs — system prompts, knowledge files
 

@@ -1,6 +1,6 @@
 # Customers
 
-*Who the business serves. Tier: v1.*
+*Who the business serves. Fill: v1.*
 
 ## Ideal customer
 
