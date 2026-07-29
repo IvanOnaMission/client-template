@@ -8,9 +8,11 @@
 
 INPUT=$(cat)
 
-# Pull the edited file path out of the hook's stdin JSON (python3 ships on macOS;
-# the repo already runs python for triage, so it's a safe dependency).
-FILE_PATH=$(printf '%s' "$INPUT" | python3 -c \
+# Pull the edited file path out of the hook's stdin JSON.
+# python3 on macOS; plain `python` on Windows (python3 doesn't exist there) — try both.
+PY="$(command -v python3 || command -v python)"
+[ -z "$PY" ] && exit 0
+FILE_PATH=$(printf '%s' "$INPUT" | "$PY" -c \
   "import sys,json; print(json.load(sys.stdin).get('tool_input',{}).get('file_path',''))" 2>/dev/null)
 [ -z "$FILE_PATH" ] && exit 0
 

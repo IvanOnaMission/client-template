@@ -1,15 +1,19 @@
 # Client Repo — Template
 
-The full folder structure for a Flowstate client's AI Operating System. Copy this
-whole folder when onboarding a new client. It uses the same **two-brain** model as
-Flowstate's own setup.
+> **Setting this up on a machine? Go straight to [`SETUP.md`](SETUP.md)** — the numbered,
+> copy-paste checklist (macOS + Windows), from install to a verified working system.
+> This page is the concepts.
+
+The full folder structure for a Flowstate client's AI Operating System. It's a **GitHub
+template repo** — new clients are stamped out with "Use this template" (see `SETUP.md`
+step 2). It uses the same **two-brain** model as Flowstate's own setup.
 
 ## How to use
 
-1. Copy this folder → rename it after the client's business (e.g. `acme-electrical`).
-2. That folder becomes the client's private GitHub repo on Ivan's GitHub; the client is added as collaborator.
+1. Create the client's repo from this template — **private**, under `FlowState-clients`, named after the business (e.g. `acme-electrical`). The client is added as collaborator.
+2. Follow [`SETUP.md`](SETUP.md) on their machine, end to end.
 3. Fill files **just-in-time** — only what the current module needs. Empty files are a to-do list, not a gap.
-4. For each team member, copy `Brain 2/wiki/people/_TEMPLATE/` → `Brain 2/wiki/people/their-name/`.
+4. For each team member, the `onboard-person` skill copies `Brain 2/wiki/people/_TEMPLATE/` → `Brain 2/wiki/people/their-name/`.
 
 ## The structure
 

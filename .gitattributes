@@ -1,0 +1,9 @@
+# Keep line endings sane across macOS + Windows.
+# Shell scripts and the launchd plist MUST stay LF or they break on the machine
+# that runs them (bash chokes on CRLF). Git for Windows would otherwise convert.
+* text=auto
+*.sh text eol=lf
+*.plist.template text eol=lf
+*.md text
+*.json text
+*.ps1 text
