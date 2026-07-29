@@ -18,11 +18,14 @@ Flowstate's own setup.
 │
 ├── CLAUDE.md            <- rulebook — explains the two brains, every agent reads first
 │
-├── Brain 1/             <- DAILY layer — small, ALWAYS loaded
-│   ├── business.md       business at a glance
-│   ├── active-now.md     current state: live + in-progress automations, priorities
+├── Brain 1/             <- COCKPIT — small, ALWAYS loaded, no business facts (links to wiki)
+│   ├── README.md         the cockpit explained
+│   ├── startup.md        what loads every session, in order
+│   ├── context.md        who the owner is + how to work with them + decision rights
+│   ├── memory-rules.md   where facts go: boundary test + check-before-you-write
+│   ├── structure.md      folder map + filing rules
 │   ├── boundaries.md     always-on safety rules (never auto-send, never invent, escalate)
-│   └── MEMORY.md         index
+│   └── now.md            current state of play — one screen, links not copies
 │
 ├── Brain 2/             <- KNOWLEDGE wiki — loaded ON DEMAND
 │   ├── CLAUDE.md         wiki schema (ingest/query/lint)
@@ -41,12 +44,14 @@ Flowstate's own setup.
 ```
 
 ## The two brains
-- **Brain 1** = daily, always loaded, small. Who they are + current state + safety rules.
-- **Brain 2** = knowledge, on demand, can be large. Raw sources → synthesised wiki.
+- **Brain 1** = the cockpit: always loaded, small. How sessions start, the rules, who the
+  owner is, current state. **Holds NO business facts — it links to the wiki.** (One fact,
+  one home: copies drift apart, links don't.)
+- **Brain 2** = the knowledge: on demand, can be large. Raw sources → synthesised wiki.
 - Don't read Brain 2 unless a task needs it — Brain 1 covers the everyday.
 
 ## Fill order (Brain 2/wiki)
-- **v0 — before any build:** `business.md`, `services.md`, `faq.md`, `boundaries.md`, `commercials.md`, `access-tracker.md`, each person's voice + triage in `people/`. Plus fill `Brain 1/` (business, boundaries).
+- **v0 — before any build:** `business.md`, `services.md`, `faq.md`, `boundaries.md`, `commercials.md`, `access-tracker.md`, each person's voice + triage in `people/`. Plus fill `Brain 1/` (context, boundaries).
 - **v1 — within 30 days:** `customers.md`, `customer-journey.md`, `decision-rules.md`, `operations.md`
 - **v2 — as agents reveal gaps:** `suppliers-partners.md`, `metrics.md`, `existing-ai.md`, `stories.md`
 

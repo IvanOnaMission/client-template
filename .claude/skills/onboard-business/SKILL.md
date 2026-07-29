@@ -13,7 +13,7 @@ Builds the **business-level** brain from what the client already has, so you rep
 - ❌ **Finding the automations / leaks (the audit)** = that's the `discovery-synthesizer` agent, not this. Don't try to find opportunities here — just capture what's true.
 
 ## Before you start
-1. **Get the business name** (for `Brain 1/business.md` + page headers).
+1. **Get the business name** (for `Brain 1/context.md` + page headers).
 2. **Ask what materials exist** and gather them:
    - Their **website** (get the URL — you'll fetch it).
    - Any **docs**: service lists, price lists, SOPs, terms, an "about us", job-software exports, past quotes/invoices (de-identified).
@@ -33,7 +33,7 @@ Follow `Brain 2/CLAUDE.md` (the schema) exactly. Fill **just-in-time, v0 first**
 - `wiki/services.md` — what they sell
 - `wiki/faq.md` — common customer questions (great source: their website FAQ)
 - `wiki/commercials.md` — pricing/packaging *if* the materials state it
-- `Brain 1/business.md` — the one-paragraph at-a-glance + key people
+- `Brain 1/context.md` — the one-line business identity + owner (facts stay in the wiki; Brain 1 links to them)
 
 **Rules (from the schema — non-negotiable):**
 - **Cite every claim:** `(source: [[raw/website/services]])` etc.
@@ -43,8 +43,13 @@ Follow `Brain 2/CLAUDE.md` (the schema) exactly. Fill **just-in-time, v0 first**
 - Update `index.md` (catalog the pages) + append to `log.md`.
 
 ## Step 3 — Fill Brain 1
-- `Brain 1/business.md` — at-a-glance (who, what, key people, how they make money).
+Brain 1 is the cockpit — it holds no business facts, only the one-line identity, working
+style, rules, and links to the wiki pages you just wrote:
+- `Brain 1/context.md` — business + owner one-liners, how the owner works, and the
+  **decision rights** section (what the AI may do without asking). Decision rights are the
+  owner's call — draft them, then confirm with the owner before any agent goes live.
 - `Brain 1/boundaries.md` — draft the always-on safety rules (never auto-send, never invent, escalate complaints/legal/large $). Confirm with the owner before any agent goes live.
+- `Brain 1/now.md` — set the date and current state (usually "onboarding in progress").
 
 ## Step 4 — Output the gaps list (this replaces the meeting)
 End with a **short** list of what the materials couldn't tell you — the only things a human needs to confirm. Keep it tight (the point is less meeting, not a 30-question form). Typically: team size + who does what, anything pricing/financial not public, how a job flows through their software, and the boundaries to confirm. Hand this list to Ivan to check with the owner.

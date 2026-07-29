@@ -10,7 +10,7 @@ stand up a new client from this template.
 
 ## What you're setting up
 
-- **Brain 1** — the small, always-loaded daily layer (who the business is, current state, safety rules).
+- **Brain 1** — the small, always-loaded cockpit (who the owner is, the rules, current state — no business facts, it links to the wiki).
 - **Brain 2** — the on-demand knowledge wiki (synthesised pages, one topic per file).
 - **agents/** — the automations that read the brain and do the work.
 - **sync/** — auto-saves the brain to GitHub and pulls updates back.
@@ -46,7 +46,7 @@ stand up a new client from this template.
 You don't fill everything up front. The empty files are a to-do list, not a gap. Fill only what
 the automation you're building needs.
 
-- Run the **`onboard-business`** skill → it interviews you and fills `Brain 1/` + `Brain 2/wiki/`.
+- Run the **`onboard-business`** skill → it ingests their materials and fills `Brain 2/wiki/` + `Brain 1/` (context, boundaries, decision rights).
 - For each team member, run **`onboard-person`** → fills `Brain 2/wiki/people/{name}/` (their voice,
   triage rules, and running memory).
 - As you learn things day to day, the **`brain-capture`** skill files them in the right place.
@@ -67,7 +67,10 @@ demand** — only the pages the current task needs.
 ## The golden rules (also in `CLAUDE.md`)
 
 1. **Obey `Brain 1/boundaries.md`** before drafting, sending, quoting, or invoicing.
-2. **Fill just-in-time** — only what the current module needs; if the brain is wrong or missing
+2. **Check before you write** — the protocol in `Brain 1/memory-rules.md`: search first,
+   never duplicate, never silently overwrite a contradiction.
+3. **Fill just-in-time** — only what the current module needs; if the brain is wrong or missing
    something, say so, don't guess.
-3. **Never commit credentials** — status only, in `Brain 2/wiki/access-tracker.md`.
-4. **`Brain 2/raw/` is immutable** — never edit a raw source; the wiki cites back to it.
+4. **Never commit credentials** — status only, in `Brain 2/wiki/access-tracker.md`.
+5. **`Brain 2/raw/` is immutable** — never edit a raw source; the wiki cites back to it.
+   And never delete the owner's information — quarantine (`_review-YYYY-MM-DD/`) and ask.
